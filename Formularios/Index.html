@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba CourseIt</title>
+    </head>
+    <body>
+        <form action="/prueba" method="POST">
+            <div>
+                <label>Nombre</label>
+                <input type="text" name="nombre" />
+            </div>
+            <div>
+                <label>Apellido</label>
+                <input type="text" name="apellido"/>
+            </div>
+            <div>
+                <label>Edad</label>
+                <input type="number" name="edad" />
+            </div>
+            <div>
+                <label>Nacionalidad</label>
+                <select name="pais">
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasil</option>
+                </select>
+            </div>
+            <div>
+                <label>¿Sos mayor de edad?</label>
+                <input type="radio" name="mayorDeEdad" id="option-yes"> 
+                <label for="option-yes">Si</label> 
+                <input type="radio" name="mayorDeEdad" id="option-no">
+                <label for="option-no">No</label>
+            </div>
+            <div>
+                <label>Selecciona tus hobbies</label>
+                <input type="checkbox" name="hobbies-futbol" id="checkbox-futbol" />
+                <label for="checkbox-futbol">Futbol</label>
+                <input type="checkbox" name="hobbies-programar" id="checkbox-programar" /> 
+                <label for="checkbox-programar">Programar</label>
+                <input type="checkbox" name="hobbies-disenar" id="checkbox-disenar" /> 
+                <label for="checkbox-disenar">Diseñar</label>
+            </div>
+            <div>
+                <input type="submit" name="" id="" />
+            </div>
+        </form>
+    </body>
+</html>
