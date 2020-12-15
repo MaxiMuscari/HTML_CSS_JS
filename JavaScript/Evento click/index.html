@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input id="username" type="text" onkeypress="log(event)" placeholder="type username...">
+        <button id="search" onclick="getInput()">Buscar usuario</button>
+    </div>
+
+    <script>
+        const userName = document.getElementById("username").value;
+
+        function log(e) {
+            if (e.key == "+") {
+                console.log(e.target.value);
+            }
+        }
+
+        function getInput() {
+            console.log(userName)
+        }
+    </script>
+</body>
+</html>
