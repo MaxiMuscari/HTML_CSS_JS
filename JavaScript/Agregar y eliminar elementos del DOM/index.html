@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        id="input-task"
+        type="text"
+        onkeypress="addItemKey(event)"
+        placeholder="type task..."
+      />
+      <button id="add-task" onclick="addItem()">Agregar</button>
+    </div>
+    <ul id="list"></ul>
+
+    <script>
+      function addItemKey(e) {
+        if (e.key == "Enter" || e.key == "+") {
+          const taskValue = document.getElementById("input-task").value;
+          addElementToDOM("list", "li", taskValue);
+          document.getElementById("input-task").value = "";
+        }
+      }
+
+      function addItem() {
+        const taskValue = document.getElementById("input-task").value;
+        addElementToDOM("list", "li", taskValue);
+        document.getElementById("input-task").value = "";
+      }
+
+      function addElementToDOM(parentId, type, content) {
+        const parent = document.getElementById(parentId);
+        const elem = document.createElement(type);
+        const text = document.createTextNode(content);
+
+        elem.appendChild(text);
+        parent.appendChild(elem);
+      }
+    </script>
+  </body>
+</html>

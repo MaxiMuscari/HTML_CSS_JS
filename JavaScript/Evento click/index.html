@@ -13,7 +13,7 @@
     </div>
 
     <script>
-        const userName = document.getElementById("username").value;
+        const userName = document.getElementById("username");
 
         function log(e) {
             if (e.key == "+") {
@@ -22,7 +22,7 @@
         }
 
         function getInput() {
-            console.log(userName)
+            console.log(userName.value)
         }
     </script>
 </body>

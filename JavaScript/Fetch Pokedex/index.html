@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main-container">
+      <input
+        id="search"
+        onkeypress="searchPokemon(event)"
+        type="text"
+        placeholder="Buscar pokemon..."
+      />
+      <img id="img-pokemon" src="" alt="" />
+      <div id="name" class="name"></div>
+    </section>
+    <script>
+      /* async function fetchData() {
+        const data = await fetch("https://api.github.com/users/MaxiMuscari");
+        const json = await data.json();
+
+        console.log(json);
+      } */
+      async function searchPokemon(e) {
+        if (e.key == "Enter") {
+          const data = await fetch(
+            `https://pokeapi.co/api/v2/pokemon/${e.target.value}`
+          );
+          const json = await data.json();
+          //console.log(json.sprites.front_default);
+          document.getElementById("img-pokemon").src =
+            json.sprites.front_default;
+          document.getElementById("name").innerText = json.name;
+          e.target.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>

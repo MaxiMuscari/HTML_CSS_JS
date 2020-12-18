@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <script>
-            //suma de dos numeros
-            function suma(num1, num2) {
-                console.log(num1 + num2)
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //suma de dos numeros
+      function suma(num1, num2) {
+        console.log(num1 + num2);
+      }
 
-            suma(1,2)
+      suma(1, 2);
 
-            //Par o impar
-            function parOImpar(num) {
-                if (num % 2 == 0) {
-                    console.log(`${num} es par`)
-                } else {
-                    console.log(`${num} es impar`)
-                }
-            }
-            parOImpar(2)
+      //Par o impar
+      function parOImpar(num) {
+        if (num % 2 == 0) {
+          console.log(`${num} es par`);
+        } else {
+          console.log(`${num} es impar`);
+        }
+      }
+      parOImpar(2);
 
-            //multiplo de 3 o 5
-            function multiploDe3o5(num) {
-                if (num % 3 == 0 || num % 5 == 0) {
-                    console.log(`${num} es multiplo de 3 o de 5`)
-                } else {
-                    console.log(`${num} no es multiplo de 3 o de 5`)
-                }
-            }
-            multiploDe3o5(9)
+      //multiplo de 3 o 5
+      function multiploDe3o5(num) {
+        if (num % 3 == 0 || num % 5 == 0) {
+          console.log(`${num} es multiplo de 3 o de 5`);
+        } else {
+          console.log(`${num} no es multiplo de 3 o de 5`);
+        }
+      }
+      multiploDe3o5(9);
 
-            //Recibe nombre de mes e informa cantidad de dias del mismo
-            function monthDays (name) {
-                switch (name) {
-                    case "enero":
-                        console.log(`${name} tiene 31 dias`)
-                        break;
-                    case "febrero":
-                        console.log(`${name} tiene 28 dias`)
-                        break;
-                    case "marzo":
-                        console.log(`${name} tiene 31 dias`)
-                        break;
-                    case "abril":
-                        console.log(`${name} tiene 30 dias`)
-                        break;
-                    case "mayo":
-                        console.log(`${name} tiene 31 dias`)
-                        break;
-                    case "junio":
-                        console.log(`${name} tiene 30 dias`)
-                        break;
-                    case "julio":
-                        console.log(`${name} tiene 31 dias`)
-                        break;
-                    case "agosto":
-                        console.log(`${name} tiene 31 dias`)
-                        break;
-                    case "septiembre":
-                        console.log(`${name} tiene 30 dias`)
-                        break;
-                    case "octubre":
-                        console.log(`${name} tiene 31 dias`)
-                        break;
-                    case "noviembre":
-                        console.log(`${name} tiene 30 dias`)
-                        break;
-                    case "diciembre":
-                        console.log(`${name} tiene 31 dias`)
-                        break;
-                    default:
-                        console.log("El mes ingresado es incorrecto")
-                        break;
-                }
-            }
-            monthDays("enero")
-        </script>
-    </body>
+      //Recibe nombre de mes e informa cantidad de dias del mismo
+      function monthDays(name) {
+        switch (name) {
+          case "enero":
+            console.log(`${name} tiene 31 dias`);
+            break;
+          case "febrero":
+            console.log(`${name} tiene 28 dias`);
+            break;
+          case "marzo":
+            console.log(`${name} tiene 31 dias`);
+            break;
+          case "abril":
+            console.log(`${name} tiene 30 dias`);
+            break;
+          case "mayo":
+            console.log(`${name} tiene 31 dias`);
+            break;
+          case "junio":
+            console.log(`${name} tiene 30 dias`);
+            break;
+          case "julio":
+            console.log(`${name} tiene 31 dias`);
+            break;
+          case "agosto":
+            console.log(`${name} tiene 31 dias`);
+            break;
+          case "septiembre":
+            console.log(`${name} tiene 30 dias`);
+            break;
+          case "octubre":
+            console.log(`${name} tiene 31 dias`);
+            break;
+          case "noviembre":
+            console.log(`${name} tiene 30 dias`);
+            break;
+          case "diciembre":
+            console.log(`${name} tiene 31 dias`);
+            break;
+          default:
+            console.log("El mes ingresado es incorrecto");
+            break;
+        }
+      }
+    </script>
+  </body>
 </html>
